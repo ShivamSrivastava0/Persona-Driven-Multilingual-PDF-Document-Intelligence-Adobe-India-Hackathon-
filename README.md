@@ -19,7 +19,7 @@ Given a collection of PDFs, a persona, and a job-to-be-done, automatically ident
 ## ⚡ Problems We Faced
 
 - **Messy, Complex PDFs:** Many documents had inconsistent formatting, scanned images, forms, or poster-like layouts. Standard font-size heuristics failed on these.
-- **Multilingual Content:** PDFs included non-English text (Hindi, Japanese, etc.), requiring Unicode normalization and language-aware logic.
+- **Multilingual Content:** PDFs included non-English text (Hindi, Japanese, Korean, etc.), requiring Unicode normalization and language-aware logic.
 - **Performance Constraints:** Processing had to be completed in under 10 seconds (Challenge 1A) and 60 seconds (Challenge 1B) for large document sets, with strict memory and CPU limits.
 - **No Internet Access:** All models and libraries had to run fully offline in Docker containers.
 - **Semantic Relevance:** For Challenge 1B, ranking sections by persona/job relevance required advanced NLP and contextual analysis.
